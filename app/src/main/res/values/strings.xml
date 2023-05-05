@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TeamWork</string>
+    <string name="clinic">Лапка помощи</string>
+    <string name="my_pets">Мои питомцы</string>
+    <string name="delete">Удалить</string>
+    <string name="bolezni">Болезни</string>
+    <string name="update">Обновить</string>
+    <string name="klichka">Кличка</string>
+    <string name="breed">Порода</string>
+    <string name="description">Описание</string>
+
+
+
+
+</resources>
