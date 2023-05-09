@@ -24,20 +24,22 @@ public class AddPetsActivity extends AppCompatActivity {
     // создание полей
     private EditText name, breed, description;
     private Button save,foto;
+    private  ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_pets);
 
-        // присваивание id полям
+
         name = findViewById(R.id.klichka);
         breed = findViewById(R.id.poroda);
         description = findViewById(R.id.description);
         save = findViewById(R.id.save);
-        foto = findViewById(R.id.foto);
+        //foto = findViewById(R.id.foto);
+        imageView = findViewById(R.id.imageView);
 
-        foto.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
@@ -86,6 +88,7 @@ public class AddPetsActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     imageView.setImageBitmap(bitmap);
+
                 }
         }
     }

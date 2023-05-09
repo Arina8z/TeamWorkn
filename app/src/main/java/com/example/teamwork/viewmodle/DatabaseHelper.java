@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
         private Context context; // поле текущего контекста
 
         private static final String DatabaseName = "MyNotes"; // поле названия БД
-        private static final int DatabaseVersion = 1; // поле версии БД
+        private static final int DatabaseVersion = 3; // поле версии БД
 
         private static final String tableName = "myNotes"; // поле названия таблицы в БД
         private static final String columnId = "id";  // поле колонки для идентификаторов записей в таблице в БД
@@ -40,7 +40,7 @@ import androidx.annotation.Nullable;
                    /* + columnDescription + " Text);";
             db.execSQL(query);*/
             String query = "CREATE TABLE " + tableName +" (" + columnId + " INTEGER PRIMARY KEY AUTOINCREMENT," + columnTitle
-            + "TEXT," + columnBreed + "TEXT," +columnDescription + "TEXT);";
+            + " TEXT," + columnBreed + " TEXT," + columnDescription + " TEXT);";
             db.execSQL(query);
             //db.execSQL("ALTER TABLE" + tableName + ADD +columnBreed + "TEXT" );
             Toast.makeText(context, "создана новая таблица", Toast.LENGTH_SHORT).show();
@@ -74,7 +74,7 @@ import androidx.annotation.Nullable;
             ContentValues cv = new ContentValues();
 
             cv.put(columnTitle,name); // добавление заголовка записи
-            //cv.put(columnBreed,breed);
+            cv.put(columnBreed,breed);
             cv.put(columnDescription,description); // добавление описания записи
 
 
@@ -127,7 +127,7 @@ import androidx.annotation.Nullable;
         }
 
         // 4) обновление записи в БД
-        public void updateNotes(String name, String description, String breed, String id){
+        public void updateNotes(String name, String breed, String description, String id){
 
             // проверка подключения к БД
             SQLiteDatabase database =  this.getWritableDatabase();
@@ -136,7 +136,7 @@ import androidx.annotation.Nullable;
             ContentValues cv = new ContentValues();
             // запись данных в контейнер
             cv.put(columnTitle,name);
-            //cv.put(columnBreed, breed);
+            cv.put(columnBreed, breed);
             cv.put(columnDescription, description);
 
             // обновление записи по id, где в метод update() подаются

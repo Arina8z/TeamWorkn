@@ -1,25 +1,35 @@
 package com.example.teamwork.modle;
 
+import android.widget.ImageView;
+
 public class Pets {
 
     private String id; // поле идентификатора записи в блокноте
     private String name; // поле заголовка записи в блокноте
     private String breed;
-   // private String description; // поле описания записи в блокноте
+    private String description; // поле описания записи в блокноте
+    private ImageView imageView;
 
 
     // конструктор
-    public Pets(String id, String name, String breed) {
+    public Pets(String id, String name, String breed, String description/*, int imageView*/) {
 
         this.id = id;
         this.name = name;
         this.breed = breed;
-       // this.description = description;
+        this.description = description;
+        //this.imageView = imageView;
     }
 
 
+   // public int getImageView() {
+     //   return imageView;
+    //}
 
-    // геттеры и сеттеры
+    //public void setImageView(int imageView) {
+      //  this.imageView = imageView;
+    //}
+
     public String getId() {
         return id;
     }
@@ -44,12 +54,12 @@ public class Pets {
         this.breed = breed;
     }
 
-    // public String getDescription() {
-      // return description;
-    //}
+     public String getDescription() {
+       return description;
+    }
 
-   // public void setDescription(String description) {
-     //   this.description = description;
-    //}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
 

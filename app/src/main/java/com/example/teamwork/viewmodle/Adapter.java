@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,12 +27,14 @@ import java.util.List;
         private Activity activity; // поле для активности
         private List<Pets> petsList; // поле для всех записей
         private List<Pets> newList; // поле для новой записи
+       // private int layout;
 
         // конструктор
-        public Adapter(Context context, Activity activity, List<Pets> petsList) {
+        public Adapter(Context context, Activity activity/*,int imageView*/, List<Pets> petsList) {
             this.context = context;
             this.activity = activity;
             this.petsList = petsList;
+           // this.layout = imageView;
             newList = new ArrayList<>(petsList);
         }
 
@@ -48,7 +51,8 @@ import java.util.List;
         public void onBindViewHolder(Adapter.ViewHolder holder, int position) {
             holder.name.setText(petsList.get(position).getName());
             holder.breed.setText(petsList.get(position).getBreed());
-            //holder.description.setText(petsList.get(position).getDescription());
+            holder.description.setText(petsList.get(position).getDescription());
+            //holder.imageView.setImageBitmap(petsList.get(position).getImageView());
 
             // обработаем нажатие на контейнер notes_recycler_view
             holder.mLayout.setOnClickListener(new View.OnClickListener() {
@@ -59,8 +63,9 @@ import java.util.List;
                     // передача данных в новую активити
                     intent.putExtra("name", petsList.get(position).getName());
                     intent.putExtra("breed", petsList.get(position).getBreed());
-                    //intent.putExtra("description", petsList.get(position).getDescription());
+                    intent.putExtra("description", petsList.get(position).getDescription());
                     intent.putExtra("id", petsList.get(position).getId());
+                    //intent.putExtra("imageView", petsList.get(position).getImageView());
                     // старт перехода
                     activity.startActivity(intent);
                 }
@@ -79,13 +84,15 @@ import java.util.List;
             // поля представления
             TextView name, breed, description;
             ConstraintLayout mLayout;
+            ImageView imageView;
 
             // конструктор класса ViewHolder с помощью которого мы связываем поля и представление list_item.xml
             ViewHolder(@NonNull View view) {
                 super(view);
                 name = view.findViewById(R.id.petsName);
                 breed = view.findViewById(R.id.petsBreed);
-               // description = view.findViewById(R.id.petsDescr);
+                description = view.findViewById(R.id.petsDescr);
+                imageView = view.findViewById(R.id.petsResource);
                 mLayout = view.findViewById(R.id.mLayout);
             }
         }

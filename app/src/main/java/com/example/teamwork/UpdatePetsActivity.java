@@ -14,9 +14,10 @@ import com.example.teamwork.viewmodle.DatabaseHelper;
 
 public class UpdatePetsActivity extends AppCompatActivity {
     // создание полей
-    private EditText name, breed,description;
+    private EditText name, breed, description;
     private Button updateBut, deleteBut;
     private String id;
+    private int imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,7 @@ public class UpdatePetsActivity extends AppCompatActivity {
         name = findViewById(R.id.klichkaR);
         breed = findViewById(R.id.porodaR);
         description = findViewById(R.id.descriptionR);
+       // imageView = findViewById(R.id.imageView);
 
         updateBut = findViewById(R.id.updbut);
         deleteBut = findViewById(R.id.delbut);
@@ -37,6 +39,7 @@ public class UpdatePetsActivity extends AppCompatActivity {
         name.setText(intent.getStringExtra("name"));
         breed.setText(intent.getStringExtra("breed"));
         description.setText(intent.getStringExtra("description"));
+        //imageView.setImageBitmap(intent.getStringExtra("imageView"));
 
         id = intent.getStringExtra("id");
 

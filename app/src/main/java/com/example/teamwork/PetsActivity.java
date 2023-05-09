@@ -94,8 +94,8 @@ public class PetsActivity extends AppCompatActivity {
         } else { // иначе помещение их в контейнер данных notesList
             while (cursor.moveToNext()){
                 // помещение в контейнер notesList из курсора данных
-                petsList.add(new Pets(cursor.getString(0), cursor.getString(1), cursor.getString(2)));
-                /*, cursor.getString(3)*/
+                petsList.add(new Pets(cursor.getString(0), cursor.getString(1), cursor.getString(2), cursor.getString(3)/*, cursor.getInt(4)*/));
+
             }
         }
 
