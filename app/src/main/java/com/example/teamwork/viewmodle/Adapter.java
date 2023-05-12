@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.teamwork.OnePetActivity;
 import com.example.teamwork.R;
 import com.example.teamwork.UpdatePetsActivity;
 import com.example.teamwork.modle.Pets;
@@ -59,7 +60,7 @@ import java.util.List;
                 @Override
                 public void onClick(View view) {
                     // задание переключения на новый экран
-                    Intent intent = new Intent(context, UpdatePetsActivity.class);
+                    Intent intent = new Intent(context, OnePetActivity.class);
                     // передача данных в новую активити
                     intent.putExtra("name", petsList.get(position).getName());
                     intent.putExtra("breed", petsList.get(position).getBreed());
