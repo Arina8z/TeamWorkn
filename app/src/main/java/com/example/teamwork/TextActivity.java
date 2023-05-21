@@ -50,9 +50,9 @@ public class TextActivity extends AppCompatActivity {
              int text = R.raw.probtex;
 
     }*/
-        text1 = R.raw.probtex;
+        //text1 = R.raw.probtex;
     }
-    int text = text1;
+    int text = R.raw.probtex;
 
     private String  getStringFromRawFile(Activity activity) {
         Resources r = activity.getResources();
