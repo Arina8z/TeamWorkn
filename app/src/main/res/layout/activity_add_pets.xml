@@ -6,115 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".AddPetsActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="187dp"
-        android:layout_height="163dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
         android:layout_width="414dp"
         android:layout_height="54dp"
+        android:layout_marginBottom="592dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.066">
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="117dp"
-            android:layout_height="match_parent"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
             android:gravity="center"
             android:text="@string/klichka"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="90dp" />
 
         <EditText
             android:id="@+id/klichka"
             android:layout_width="280dp"
-            android:layout_height="50dp" />
-
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="135dp"
+            tools:layout_editor_absoluteY="89dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="414dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="396dp"
+        android:layout_marginBottom="512dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
-
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="117dp"
-            android:layout_height="match_parent"
+            android:layout_width="109dp"
+            android:layout_height="44dp"
             android:gravity="center"
             android:text="@string/breed"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="165dp" />
 
         <EditText
             android:id="@+id/poroda"
             android:layout_width="280dp"
-            android:layout_height="53dp" />
+            android:layout_height="53dp"
+            tools:layout_editor_absoluteX="128dp"
+            tools:layout_editor_absoluteY="163dp" />
 
     </LinearLayout>
-
     <TextView
         android:id="@+id/textView5"
         android:layout_width="164dp"
         android:layout_height="35dp"
+        android:layout_marginBottom="440dp"
         android:gravity="center"
         android:text="@string/description"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.326" />
-
-
-    <EditText
-        android:id="@+id/description"
-        android:layout_width="341dp"
-        android:layout_height="168dp"
-        android:layout_marginTop="9dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        app:layout_constraintVertical_bias="0.081" />
-
-    <Button
-        android:id="@+id/foto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="540dp"
-        android:text="Фото"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="16dp"
         android:text="Сохранить"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="345dp"
+        android:layout_height="242dp"
+        android:layout_marginBottom="96dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

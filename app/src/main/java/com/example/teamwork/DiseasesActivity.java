@@ -2,6 +2,7 @@ package com.example.teamwork;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,7 +13,42 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class DiseasesActivity extends AppCompatActivity {
+    ListView diseasesList;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_diseases);
+
+        String[] diseases = { "Инфекционные заболевания", "Генетические заболевания", "Заболевания кожи", "Паразиты", "Желудочно-кишечные заболевания", "Болезни сердца"};
+
+
+        // получаем элемент ListView
+        ListView diseasesList = findViewById(R.id.diseasesList);
+
+        // создаем адаптер
+        ArrayAdapter<String> adapter = new ArrayAdapter(this,
+                android.R.layout.simple_list_item_1, diseases);
+
+        // устанавливаем для списка адаптер
+        diseasesList.setAdapter(adapter);
+
+        diseasesList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String selectedItem = diseases[position];
+                int num = position;
+                Intent intent = new Intent(DiseasesActivity.this, SecondActivity.class);
+
+                intent.putExtra("num", num);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+}
+/*
     private ListView diseasesList;
     private TextView diseasesOut;
     private String[] arrayDiseases = {"Блохи", "Инфекционные заболевания", "Генетические заболевания", "Заболевания кожи", "Опухоли и рак", "Желудочно-кишечные заболевания", "Глазные болезни"};
@@ -66,5 +102,5 @@ public class DiseasesActivity extends AppCompatActivity {
 
 
         };
-    } */
-}
+    }
+}*/

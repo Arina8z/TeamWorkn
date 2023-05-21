@@ -10,9 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.teamwork.viewmodle.DBvakHelper;
+//import com.example.teamwork.viewmodle.DBvakHelper;
 
-public class UpdateVaksActivity extends AppCompatActivity {
+/*public class UpdateVaksActivity extends AppCompatActivity {
 
     private EditText vaks;
     private EditText data;
@@ -72,5 +72,5 @@ public class UpdateVaksActivity extends AppCompatActivity {
     };
 }
 
-
+*/
 

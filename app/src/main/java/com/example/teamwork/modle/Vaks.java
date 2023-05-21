@@ -1,14 +1,14 @@
 package com.example.teamwork.modle;
 
-public class Vaks {
+/*public class Vaks {
     private  String id;
     private String vaks;
     private String data;
     // private LocalDate date;
 
 
-    public Vaks(String id, String vaks, String data /*LocalDate date, LocalTime time*/) {
-        this.id = id;
+    public Vaks(String id, String vaks, String data /*LocalDate date, LocalTime time*//*) {
+  /*      this.id = id;
         this.vaks = vaks;
         this.data = data;
 
@@ -43,6 +43,6 @@ public class Vaks {
     }
 
 
-}
+}*/
 
 

@@ -37,16 +37,16 @@ public class AddPetsActivity extends AppCompatActivity {
         description = findViewById(R.id.description);
         save = findViewById(R.id.save);
         //foto = findViewById(R.id.foto);
-        imageView = findViewById(R.id.imageView);
+      //  imageView = findViewById(R.id.imageView);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+      /*  imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent photoPickerIntent = new Intent(Intent.ACTION_PICK);
                 photoPickerIntent.setType("image/*");
                 startActivityForResult(photoPickerIntent, GALLERY_REQUEST);
             }
-        });
+        });*/
 
         // обработка нажатия кнопки
         save.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +71,7 @@ public class AddPetsActivity extends AppCompatActivity {
             }
         });
     }
-    @Override
+ /*   @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent imageReturnedIntent) {
         super.onActivityResult(requestCode, resultCode, imageReturnedIntent);
 
@@ -91,6 +91,6 @@ public class AddPetsActivity extends AppCompatActivity {
 
                 }
         }
-    }
+    }*/
 }
 

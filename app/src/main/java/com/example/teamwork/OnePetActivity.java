@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class OnePetActivity extends AppCompatActivity {
+/*public class OnePetActivity extends AppCompatActivity {
 
     private TextView name;
     private TextView breed;
@@ -72,3 +72,4 @@ public class OnePetActivity extends AppCompatActivity {
     };
 
 }
+*/

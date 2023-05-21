@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
-public class DBvakHelper extends SQLiteOpenHelper {
+/*public class DBvakHelper extends SQLiteOpenHelper {
     // поля базы данных
     private Context context; // поле текущего контекста
 
@@ -52,13 +52,13 @@ public class DBvakHelper extends SQLiteOpenHelper {
         /** с помощью getWritableDatabase() мы проверяем есть ли подключение к БД,
          * если есть то им пользуемся, если нет то создаём новое
          */
-        SQLiteDatabase db = this.getWritableDatabase();
+    /*    SQLiteDatabase db = this.getWritableDatabase();
 
-        /** нужно создать объект класса ContentValues для добавления и обновления существующих записей БД,
+   /*     /** нужно создать объект класса ContentValues для добавления и обновления существующих записей БД,
          * Данный объект представляет словарь, который содержит набор пар "ключ-значение"
          * Для добавления в этот словарь нового объекта применяется метод put
          */
-        ContentValues cv = new ContentValues();
+    /*    ContentValues cv = new ContentValues();
 
         cv.put(columTitle,vaks); // добавление заголовка записи
         cv.put(columData,data);
@@ -141,5 +141,5 @@ public class DBvakHelper extends SQLiteOpenHelper {
         db.close();
     }
 }
-
+*/
 

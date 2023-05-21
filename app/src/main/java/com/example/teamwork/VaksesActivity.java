@@ -13,14 +13,14 @@ import android.widget.CalendarView;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.teamwork.modle.Vaks;
-import com.example.teamwork.viewmodle.DBvakHelper;
-import com.example.teamwork.viewmodle.VaksAdapter;
+//import com.example.teamwork.modle.Vaks;
+//import com.example.teamwork.viewmodle.DBvakHelper;
+//import com.example.teamwork.viewmodle.VaksAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class VaksesActivity extends AppCompatActivity {
+/*public class VaksesActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView; // поле для списка RecyclerView
     //private FloatingActionButton fabAdd; // поле для кнопки добавить новую заметку
@@ -120,5 +120,5 @@ public class VaksesActivity extends AppCompatActivity {
     }
 
 
-}
+}*/
 

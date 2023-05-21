@@ -6,30 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".DiseasesActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/diseasesList"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-
-         />
-
     <TextView
-        android:id="@+id/diseasesOut"
-        android:layout_width="205dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="42dp"
+        android:id="@+id/text"
+        android:layout_width="286dp"
+        android:layout_height="85dp"
         android:gravity="center"
-        android:text="TextView"
-        android:textSize="25dp"
+        android:text="Cписок болезней"
+        android:textColor="#8A0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/diseasesList"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+    <ListView
+        android:id="@+id/diseasesList"
+        android:layout_width="397dp"
+        android:layout_height="559dp"
+        android:layout_marginBottom="20dp"
+        android:background="#A694CF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

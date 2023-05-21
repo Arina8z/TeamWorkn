@@ -1,5 +1,5 @@
 package com.example.teamwork.viewmodle;
-
+/*
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -14,13 +14,13 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.teamwork.R;
-import com.example.teamwork.UpdateVaksActivity;
+//import com.example.teamwork.UpdateVaksActivity;
 import com.example.teamwork.modle.Vaks;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class VaksAdapter extends RecyclerView.Adapter<VaksAdapter.ViewHolder> {
+/*public class VaksAdapter extends RecyclerView.Adapter<VaksAdapter.ViewHolder> {
 
     private String id;
     DBvakHelper dbHelper;
@@ -118,4 +118,4 @@ public class VaksAdapter extends RecyclerView.Adapter<VaksAdapter.ViewHolder> {
 
 
 
-}
+}*/

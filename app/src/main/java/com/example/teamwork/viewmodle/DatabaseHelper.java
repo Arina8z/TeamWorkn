@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
         private Context context; // поле текущего контекста
 
         private static final String DatabaseName = "MyNotes"; // поле названия БД
-        private static final int DatabaseVersion = 3; // поле версии БД
+        private static final int DatabaseVersion = 7; // поле версии БД
 
         private static final String tableName = "myNotes"; // поле названия таблицы в БД
         private static final String columnId = "id";  // поле колонки для идентификаторов записей в таблице в БД

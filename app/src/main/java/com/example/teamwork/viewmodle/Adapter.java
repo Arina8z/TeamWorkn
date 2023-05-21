@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.teamwork.OnePetActivity;
+//import com.example.teamwork.OnePetActivity;
 import com.example.teamwork.R;
 import com.example.teamwork.UpdatePetsActivity;
 import com.example.teamwork.modle.Pets;
@@ -52,7 +52,7 @@ import java.util.List;
         public void onBindViewHolder(Adapter.ViewHolder holder, int position) {
             holder.name.setText(petsList.get(position).getName());
             holder.breed.setText(petsList.get(position).getBreed());
-            holder.description.setText(petsList.get(position).getDescription());
+            //holder.description.setText(petsList.get(position).getDescription());
             //holder.imageView.setImageBitmap(petsList.get(position).getImageView());
 
             // обработаем нажатие на контейнер notes_recycler_view
@@ -60,7 +60,7 @@ import java.util.List;
                 @Override
                 public void onClick(View view) {
                     // задание переключения на новый экран
-                    Intent intent = new Intent(context, OnePetActivity.class);
+                    Intent intent = new Intent(context, UpdatePetsActivity.class);
                     // передача данных в новую активити
                     intent.putExtra("name", petsList.get(position).getName());
                     intent.putExtra("breed", petsList.get(position).getBreed());
@@ -92,8 +92,8 @@ import java.util.List;
                 super(view);
                 name = view.findViewById(R.id.petsName);
                 breed = view.findViewById(R.id.petsBreed);
-                description = view.findViewById(R.id.petsDescr);
-                imageView = view.findViewById(R.id.petsResource);
+               // description = view.findViewById(R.id.petsDescr);
+               // imageView = view.findViewById(R.id.petsResource);
                 mLayout = view.findViewById(R.id.mLayout);
             }
         }
