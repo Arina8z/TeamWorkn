@@ -116,7 +116,7 @@ public class SecondActivity extends AppCompatActivity {
 
             } else
             if (posit == 3) {
-                String[] diseases2 = {"Блохи", "Клещи", "Черви"};
+                String[] diseases2 = {"Блохи", "Клещи", "Глисты"};
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, diseases2);
                 diseases2List.setAdapter(adapter);
                 diseases2List.setOnItemClickListener(new AdapterView.OnItemClickListener() {
